@@ -28,9 +28,9 @@ int _printf(const char *format, ...)
 	}
 			else
 	{	function = get_print_func(format, i + 1);
-		if (function == NULL)
+	if (function == NULL)
 	{
-	if (format[i + 1] == ' ' && !format[i + 2])
+		if (format[i + 1] == ' ' && !format[i + 2])
 			return (-1);
 	handl_buf(buffer, format[i], ibuf), len++, i--;
 	}
@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 		}
 		} i++;
 	}
-											else
+		else
 	handl_buf(buffer, format[i], ibuf), len++;
 	for (ibuf = len; ibuf > 1024; ibuf -= 1024)
 		;
