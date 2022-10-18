@@ -43,4 +43,5 @@ int prinnhex(va_list arguments, char *buf, unsigned int ibuf)
 	free(binary);
 	free(hexadecimal);
 	return (count + 2);
+}
 
